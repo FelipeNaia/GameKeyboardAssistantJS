@@ -3,10 +3,23 @@ let c = new Function("a", 'b',
 "let d = c*c;"+
 "return d");
 
-function a(){
-    log("a")
+let inputKeys = [119];
+
+let kb = new GKeyboard(inputKeys);
+
+//game loop:
+function draw(){
+    requestAnimationFrame(draw);
 }
 
-let jqtest = "addEventListener('click', a)";
+requestAnimationFrame(draw)
 
-eval(jqtest)
+// function a(){
+//     log("a")
+//     eval(addEve);
+// }
+
+// let jqtest = "addEventListener('click', a)";
+// let addEve = "addEventListener('keypress', a)"
+
+// eval(jqtest)
